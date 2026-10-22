@@ -1,0 +1,35 @@
+# Que se sube a EAS Build.
+#
+# Existe porque assets/db/japanese.db NO esta en git (es un artefacto de 16 MB
+# que genera el pipeline). Con la subida por git que EAS hace por defecto, la
+# app se compilaria SIN contenido. Con EAS_NO_VCS=1 se sube el directorio de
+# trabajo y manda este archivo, asi que la base viaja y la morralla no.
+
+node_modules/
+tools/pipeline/node_modules/
+tools/pipeline/.venv/
+
+# fuentes crudas del pipeline: 164 MB de XML que solo hacen falta para
+# regenerar japanese.db, nunca dentro de la app
+tools/pipeline/.cache/
+
+# artefactos de build
+dist/
+dist-web/
+web-build/
+/android
+/ios
+.expo/
+.kotlin/
+
+# entorno local
+.git/
+.claude/
+.vscode/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.env*.local
+*.tsbuildinfo

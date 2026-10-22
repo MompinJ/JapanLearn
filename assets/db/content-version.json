@@ -1,0 +1,20 @@
+{
+  "version": "c09a7f112921301d",
+  "dbSha256": "c09a7f112921301dea3c0514a35a4d223d7849aa500b85da75706a24b79e423d",
+  "contentSchema": 1,
+  "builtAt": "2026-09-17T18:10:32.135Z",
+  "counts": {
+    "glyphs": 3297,
+    "meanings": 18685,
+    "readings": 12890,
+    "comps": 5352,
+    "strokes": 3130,
+    "curriculum": 3077,
+    "words": 26563,
+    "senses": 57062,
+    "glosses": 122322,
+    "wordGlyph": 58180,
+    "anchors": 8464
+  },
+  "bytes": 16883712
+}

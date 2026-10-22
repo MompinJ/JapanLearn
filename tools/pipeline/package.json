@@ -1,0 +1,16 @@
+{
+  "name": "japanlearn-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Genera assets/db/japanese.db desde KANJIDIC2, KanjiVG, JMdict y Tatoeba",
+  "scripts": {
+    "fetch": "node src/cli.mjs fetch",
+    "build": "node src/cli.mjs build",
+    "verify": "node src/cli.mjs verify",
+    "all": "node src/cli.mjs all"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0"
+  }
+}
